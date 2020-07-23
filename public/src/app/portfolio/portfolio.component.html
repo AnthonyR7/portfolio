@@ -1,0 +1,118 @@
+<div class = "barA"></div>
+<div class = "barB"></div>
+<div class="barC"></div>
+<div class = "portfolioCom">
+    <div class = "techHeader">
+        <p>Technologies currently using:
+            <span [ngClass]="{'goldD' : toggle, 'changeBack': !toggle}">Django</span>,
+            <span [ngClass]="{'goldD' : toggle, 'changeBack': !toggle}">Python</span>,
+            <span [ngClass]="{'goldD' : toggle, 'changeBack': !toggle}">Ajax</span>,
+            <span [ngClass]="{'goldD' : toggle, 'changeBack': !toggle}">Jquery</span>,
+            <span [ngClass]="{'goldA' : otherTog, 'changeBack': !otherTog}">Mongo DB</span>,
+            <span [ngClass]="{'goldA' : otherTog, 'changeBack': !otherTog}">Angular</span>,
+            <span [ngClass]="{'goldA' : otherTog, 'changeBack': !otherTog}">Express</span>,
+            <span [ngClass]="{'goldA' : otherTog, 'changeBack': !otherTog}">Nodejs</span>,
+            <span [ngClass]="{'goldA' : otherTog, 'changeBack': !otherTog}">css</span>
+        </p>
+        <p> Deployment: <span id = "aws">AWS(EC2, Load Balancer, Domain Manager)</span></p>
+    </div>
+    <div class = "projectList">
+        <ul>
+            <li id = "myClockLi">
+                <div class = "myClock">
+                    <button (click)="showDjango()">Clock In System</button>
+                </div>
+            </li>
+            <li id = "rapWebLi">
+                <div class = "rapWeb">
+                    <button (click)="showArt()">Artist Website</button>
+                </div>
+            </li>
+            <li id = "petMeanLi">
+                <div class = "petMean">
+                    <button (click)="showPoke()" >Pet Adoption</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class = "showCase">
+       <div class = "projectClock" *ngIf = "div1">
+           <div id = "titleDesc">
+                <h2>Staff Clock In/Out System</h2>
+                <h3>A clock out system for employees and a view section
+                    for managers.<span><a href="http://54.193.101.96/">Try it</a></span>(Just example, Fake emails only)
+                </h3>
+           </div>
+           <ul>
+               <li>
+                    <div id = "desc">
+                        <p>The index Pg being the Dashboard,
+                            will display your clock in and clock out time with
+                            a date and allow you to
+                            clock out if you haven't already.
+                        </p>
+                    </div>
+                    <div class = "picHolder">
+                        <img src = "./assets/clockImages/Dashboard.PNG" />
+                    </div>
+               </li>
+               <li>
+                    <div id = "desc" >
+                        <p>If an employee clocks out, a report of the day can be
+                            submitted.
+                        </p>
+                    </div>
+                    <div class = "picHolder">
+                        <img src = "./assets/clockImages/DailyReport.PNG" />
+                    </div>
+               </li>
+               <li>
+                    <div id = "desc" >
+                        <p>In the manager view, the view will dislay those
+                            who have clock in for the day. I a report was
+                            submitted successfully, it can be viewed here.
+                        </p>
+                    </div>
+                    <div class = "picHolder">
+                        <img src = "./assets/clockImages/DailyUpdateSeeOtherUserReport.PNG" />
+                    </div>
+               </li>
+               <li>
+                    <div id = "desc">
+                        <p>The manage view section has the options to add
+                            an employee, edit an employees account and add
+                            points to that employee.
+                        </p>
+                    </div>
+                    <div class = "picHolder">
+                        <img src = "./assets/clockImages/ManageEmployee.PNG" />
+                    </div>
+                </li>
+                <li>
+                    <div id = "desc">
+                        <p>A logged in user can change a password if need be.</p>
+                    </div>
+                    <div class = "picHolder">
+                        <img src = "./assets/clockImages/Settings.PNG" />
+                    </div>
+               </li>
+           </ul>
+       </div>
+       <div class = "projectArt" *ngIf = "div2">
+           <div id = "mDesc">
+                <h2>This Simple website designed with a Bio Format
+                    in regards to Music.
+                    <span><a href="http://goenigmamusic.com/">GoEnigma</a></span>
+                </h2>
+           </div>
+           <img id = "goenigma" src = "./assets/music/enigmaWebsite.png" />
+       </div>
+       <div class = "projectPet" *ngIf = "div3">
+            <img id = "bearPic" src = "./assets/misc/bearTWO.jpg">
+            <div id = "petDesc">
+                <h2>Project Needs more love.</h2>
+            </div>
+
+       </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class = "upperBar">
+  <ul>
+    <li><a id = "home" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a></li>
+    <li><a id = "portfolio" [routerLink]="['/Portfolio']" routerLinkActive="active">Portfolio</a></li>
+    <li><a id = "about" [routerLink]="['/About']" routerLinkActive="active">About</a></li>
+    <li><a id = "contact" [routerLink] = "['/Contact']" routerLinkActive="active" >Contact</a></li>
+    <li><a href="https://www.linkedin.com/in/anthonyrodriguezdev/">LinkedIn</a></li>
+  </ul>
+</div>
+<router-outlet></router-outlet>
