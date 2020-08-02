@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NONE_TYPE } from '@angular/compiler';
 
 @Component({
   selector: 'app-portfolio',
