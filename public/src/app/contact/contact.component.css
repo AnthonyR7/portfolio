@@ -104,6 +104,27 @@ color: lightslategray;
     box-shadow: 0px 0px 10px 2px aqua;
     font-family: 'Andada';
 }
+@media screen and (min-width: 100px) and (max-width: 415px){
+    .feedBack{
+        height: 150px;
+        width: 200px;
+        display: inline-block;
+        margin-top: 107px;
+        margin-right: 45%;
+    }
+}
+@media screen and (min-height: 701px) and (max-height: 830px){
+    .contact{
+        height: 130%;
+    }
+}
+@media screen and (min-height: 100px) and (max-height: 700px){
+    .contact{
+        height: 160%;
+    }
+}
+
+
 @media screen and (min-height: 541px) and (max-height: 580px){
     .emailBoxForm{
         padding-top: 25%;

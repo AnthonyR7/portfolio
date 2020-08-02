@@ -15,10 +15,12 @@
                 </ul>
             </form>
         </div>
-        <div *ngFor="let needed of missing" style="color: red">
-            {{needed}}
+        <div class = "feedBack">
+            <div *ngFor="let needed of missing" style="color: red">
+                {{needed}}
+            </div>
+            <div *ngIf="feedBack" style = "color: green">Email Sent, Thank you.</div> 
         </div>
-        <div *ngIf="feedBack" style = "color: green">Email Sent, Thank you.</div>
     </div>
 
 </div>
