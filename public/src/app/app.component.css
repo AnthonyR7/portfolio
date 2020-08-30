@@ -77,7 +77,7 @@ scroll-behavior: smooth;
 
 @media screen and (min-width: 100px) and (max-width: 639px){
     .upperBar{
-        height: 250px;
+        height: 290px;
     }
     .upperBar ul{
         text-align: center;

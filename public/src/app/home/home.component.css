@@ -60,11 +60,13 @@ p{
 .bouncyBox{
   background-color: #0bc4cd;
   width: 521px;
-  height: 200px;
+  height: auto;
   margin-top: 134px;
   display: inline-block;
   border-radius: 17%;
   box-shadow: 5px 10px #B1B3B3;
+  padding-bottom: 12px;
+  margin-top: 170px;
 }
 
 
@@ -141,11 +143,11 @@ p{
   }
 }
 
-@media screen and (min-width: 100px) and (max-width: 580px){
+/* @media screen and (min-width: 100px) and (max-width: 580px){
   .bouncyBox{
       height: 249px;
   }
-}
+} */
 
 @media screen and (min-width: 100px) and (max-width: 450px){
   #myFace{

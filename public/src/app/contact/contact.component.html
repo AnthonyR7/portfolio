@@ -4,14 +4,14 @@
 <div class = "contact">
     <div class = "emailBox">
         <div class = "emailBoxForm">
-            <form (submit) = "onSubmit()">
+            <form (ngSubmit) = "onSubmit()">
                 <h1>Contact</h1>
                 <p>Lets get in touch. I'm open for hire and collaboration.</p>
                 <ul id = "listForm">
                     <li id = "inputForm"><input id = "form_field" type ="text"  required minlength="3" placeholder="Name" #name = "ngModel" [(ngModel)] = "content.subject" name = "content.subject" /></li>
                     <li id = "inputForm"><input id = "form_field" type ="text" placeholder="Email"  required minlength="4" #email = "ngModel" [(ngModel)] = "content.email" name = "content.email"/></li>
                     <li id = "inputForm"><textarea id = "form_field" type ="text" placeholder="Message"  required minlength="4" #message = "ngModel" [(ngModel)] = "content.message" name = "content.message"></textarea></li>
-                    <li id = "inputForm"><button type ="submit" id = "subButton">Submit</button></li>
+                    <li id = "inputForm"><input type ="submit" value = "Submit" id = "subButton"></li>
                 </ul>
             </form>
         </div>

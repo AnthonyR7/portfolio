@@ -19,14 +19,15 @@
     to {height: 6px;}
 }
 
-.aboutCom{
+
+/* #aboutCom{
     height: 100%;
     width: 100%;
     background-color: #1b242f;
     display: block;
     padding-top: 20px;
-}
-
+} */
+/*
 .portPic {
     width: 45%;
     height: auto;
@@ -45,7 +46,7 @@ img{
     box-shadow: 5px 6px black;
 }
 
-.aboutDesc{
+#aboutDesc{
     padding-top: 10px;
     padding-left: 3%;
     text-align: left;
@@ -100,3 +101,88 @@ img{
     }
 
 }
+@media screen and (min-height: 100px) and (min-height: 600px){
+    .aboutCom{
+        height: 150%;
+    }
+} */
+/* * {
+    box-sizing: border-box;
+} */
+/* 
+.aboutCom {
+	height: 100%;
+    padding-top: 20px;
+    background-color: #1b242f;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.portPic {
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+
+img {
+	display: block;
+    max-height: 500px;
+    border-radius: 3%;
+    box-shadow: -10px 5px 10px 1px black;
+}
+
+@supports (-ms-ime-align: auto) {
+    img {
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+    }
+  }
+
+.aboutDesc {
+    background-color: #0bc4cd;
+    box-shadow: 0px 0px 62px 2px aqua;
+	padding: 24px;
+	
+    text-align: center;
+}
+.aboutDesc p{
+    margin-top: 21px;
+    font-family: 'Share Tech';
+    font-size: 26px
+
+}
+.aboutDesc h2{
+    margin-left: 5px;
+    font-family: 'Share Tech';
+    font-size: 28px;
+}
+
+@media screen and (min-width: 600px){
+	.aboutDesc {
+        margin-top: 20px;
+		width: 500px;
+		margin-left: 67px;
+        text-align: left;
+    }
+    
+}
+@media screen and (min-width: 50px) and (max-width: 601px) {
+    .aboutDesc{
+        margin-top: 20px;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 880px) {
+    .aboutDesc{
+        margin-top: 20px;
+        width: 100%;
+        margin-left: 0px;
+        text-align: center;
+    }
+    img{
+        box-shadow: 2px -10px 5px 2px black;
+    }
+    .aboutCom{
+        height: auto;
+    }
+} */
